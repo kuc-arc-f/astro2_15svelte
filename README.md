@@ -14,8 +14,9 @@
 Astro 2 + Svelte, Db session sample
 
 ***
-### blog
+### blog 
 
+https://zenn.dev/knaka0209/books/b5e25eac05b2c5
 
 ***
 
