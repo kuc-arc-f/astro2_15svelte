@@ -14,7 +14,8 @@
 Astro 2 + API sample, server
 
 ***
-* .env, postgres set
+* .env
+* postgres setting
 
 ```
 POSTGRES_DATABASE="gpt1"

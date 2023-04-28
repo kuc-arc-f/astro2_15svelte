@@ -15,7 +15,7 @@ Astro 2 + API sample, client
 
 ***
 ### setup
- 
+* .env
 * PUBLIC_API_URL:
 * auth info: PUBLIC_BASIC_AUTH_USER, PUBLIC_BASIC_AUTH_PASSWORD
 
