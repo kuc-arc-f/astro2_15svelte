@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import App from './App.svelte';
+---
+
+<Layout title="Welcome to Astro.">
+    <main class="container">
+        <App client:only="svelte" />
+    </main>
+</Layout>
+<!-- -->
+<style>
+</style>
+
+<!--
+<a href={`/gpt3/create`} class="btn btn-primary">Create</a>
+ -->

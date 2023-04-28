@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export type Post = {
+  id: number;
+  name: string;
+};
+//
+let user_id = ""; // ユーザーIDを保持する変数
+let title = ""; // タスクのタイトルを保持する変数
+let content = ""; // タスクの内容を保持する変数
+let completed = false; // タスクの完了状態を保持する変数
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="container">
+		<a href={`/gpt4`}>[ Back ]</a>
+		<hr />		
+		<h1>Create</h1>
+		<p class="instructions">
+		</p>
+		<hr />
+		<div class="col-sm-6">
+			<label>
+				タスクのタイトル:
+				<input id="title" name="title" />
+			</label><br />
+			<label>
+				タスクの内容:
+				<textarea id="content" name="content" ></textarea>
+			</label><br />
+			<label>
+				完了状態:
+				<input type="checkbox" id="completed" name="completed" />
+			</label>
+			<hr />
+			<button id="btn_save" class="btn btn-primary">Save
+			</button>
+		</div>	
+	</main>
+</Layout>
+<!-- -->
+<style>
+</style>
+<!-- -->
+<script src="./CrudCreate.ts"></script>
+
+<!--
+ -->

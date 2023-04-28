@@ -1,0 +1,26 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CrudShow from '../CrudShow';
+import App from './App.svelte';
+//
+const { id } = Astro.params;
+console.log(id);
+---
+
+<!-- -->
+<style>
+</style>
+
+<!-- MarkUp -->
+<Layout title="Welcome to Astro.">
+    <div class="container">
+        <App client:only="svelte" id={id} />
+        <hr />
+    </div>
+</Layout>
+<!-- -->
+<script src="../CrudShow.ts"></script>
+<!--
+<input type="hidden" value={id} id="item_id" />
+<button id="btn_delete" class="btn btn-danger">Delete</button>
+ -->
